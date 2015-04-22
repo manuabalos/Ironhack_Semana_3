@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Mars Rover Kata</title>
+    <meta charset="utf-8"/>
+    <script defer type="text/javascript" src="rover.js"></script>
+  </head>
+  <body>
+  	<h1>Mars Rover Kata</h1>
+  	<hr>
+    Posicion inicial del Rover [0,0]. Instrucciones del movimiento del Rover:
+    <ul>
+      <li><b>N</b> se mueve hacia el Norte.</li> 
+      <li><b>S</b> se mueve hacia el Sur.</li>
+      <li><b>E</b> se mueve hacia la Este.</li>
+      <li><b>W</b> se mueve hacia el Oeste.</li>
+    </ul>
+    <p>La dimension del planeta es 10x10. En el caso de salirse de dicha dimension aparecera en el otro extremo del planeta ya que los planetas son esferas.</p>
+
+    </p>Toda información es mostrada en consola. Asegurese de tener abierta para consultar sus movimientos o estar informado de incidencias.</p>
+    Obstaculos en las siguientes posiciones (por si se desea probar):
+    <ul>
+      <li>Obstaculo en el punto: <b>[2,0]</b></li> 
+      <li>El choque entre Rover en el mismo punto se considera como obstaculo y se tomaran medidas para que no esten en el mismo punto y choquen.</li> 
+    </ul>
+
+    <hr>
+    Ejemplo de coordenadas:
+      <p>>> Al primer rover se le indica el movimiento 'NNEE'. Pero en el punto [2,0] encuentra un obstaculo, retrocede y sigue su camino hasta finalizar sus movimientos. Se coloca finalmente en el punto [1,2].</p>
+      >> El segundo Sover se le indica los mismos movimientos que el anterior 'NNEE'. Pero en el punto [2,0] encuentra obstaculo retrocede y sigue su camino. Pero en el punto [1,2] se choca con su amigo el primer Rover por lo que retrocede para no lastimarlo y finaliza sus movimientos restantes.</p>
+
+    <hr>
+  </body>
+</html>
